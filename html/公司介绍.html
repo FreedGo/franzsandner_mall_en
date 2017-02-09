@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8"/>
+	<?php
+$bclassid=$GLOBALS[navclassid]; //取得本栏目id
+?>
+	[e:loop={"select * from [!db.pre!]enewsclass where classid = '$bclassid' order by classid",0,24,0}]
+	<title><?=$bqr[bname]?>_<?=$public_r['add_sitename']?></title>
+	<meta name="keywords" content="<?=$bqr[classpagekey]?>" />
+	<meta name="description" content="<?=$bqr[intro]?>" />
+	[/e:loop]
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
+	<link href="/css/xin-sale-net.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+
+	<script type="text/javascript" src="/js/jquery.SuperSlide.2.1.1.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			// 右侧点击菜单，切换左侧内容
+			var ComIntrL = $('.company-introduce'),//左侧菜单
+			    ComIntrLi,
+			    noname,
+			    ComIntrR =$('.neirong');//右侧内容
+			ComIntrL.on('click', function(event) {
+				$(this).addClass('current').siblings('.company-introduce').removeClass('current');//左侧菜单class更改
+				ComIntrLi = $(this).index();
+//				console.log(ComIntrLi);
+				ComIntrR.eq(ComIntrLi).addClass('current').siblings().removeClass('current');
+				noname = $(this).children('a').html();
+				$('.list-page-num h3').html(noname);
+			});
+
+		});
+	</script>
+</head>
+<body>
+[!--temp.header--]
+<div id="body_container">
+	<div class="banner">
+		<div class="banner-content">
+			<script src="http://en.franzsandner.com/d/js/acmsd/thea13.js"></script>
+		</div>
+	</div>
+	<div class="divsd clearfix">
+		<div class="list-menu clearfix">
+			<div class="list-new-logo f-l-l">
+				<h3>Franz Sandner</h3>
+			</div>
+			<div class="list-page-num f-l-l">
+				<h2 class="f-l-l">Introduction&gt;</h2>
+				<h3 class="f-l-l">Franz Sandner</h3>
+			</div>
+		</div>
+		<div class="m_n">
+			<div class="main_new2">
+				<!-- <div class="h203">销售网络</div> -->
+				<!-- 左侧菜单开始···················································· -->
+				<div class="nn_left2">
+					<div class="leftcate">
+						<!--<h2 class="h201">Introduction</h2>-->
+						<ul style="margin-top:10px;">
+							<li class=" company-introduce current"><a >Franz Sandner</a></li>
+							<!-- <li class=" company-introduce"><a></a></li> -->
+							<!-- <li class=" company-introduce"><a></a></li> -->
+							<li class=" company-introduce"><a>Members</a></li>
+							<!-- <li class=" company-introduce"><a>Technical Team</a></li> -->
+						</ul>
+					</div>
+					<!-- 搜索框开始················································ -->
+					<!-- <div class="search-warp clearfix">
+					  <form action="">
+
+						<div class="form-group f-l-l">
+						   <label class="sr-only" for="search-con">输入各地琴行</label>
+						  <input class="form-control f-l-l" id="search-con " type="text" placeholder="输入搜索内容">
+						</div>
+						<button class="btn  btn-warning f-l-l" type="submit ">搜索</button>
+					  </form>
+					</div> -->
+					<!-- 搜索框结束················································ -->
+				</div>
+				<!-- 右侧菜单开始················································ -->
+				<div class="nn_right">
+					<!--<h4 class="right05">&gt;&gt; <a href="">Introduction</a> &gt;<span class="noname">Franz Sandner</span> </h4>-->
+					<!-- 省代理商列表 -->
+					<div class="province-sale-list">
+						<!-- 文章内容1 Franz Sandenr·········································· -->
+						<div class="neirong current flsd">
+							<img src="/images/falan01.jpg" alt="" />
+							<!-- 段落1···················································· -->
+							<div class="neirong-duan">
+								<div class="duan-head clearfix">
+									<h3 class="f-l-l">Brand Foundation</h3>
+									<span class="f-l-l">Franz Sandner</span>
+								</div>
+								<p>In 1924, Mr. Franz Sandner established his own company in Germany, and with a warm and gentle tone and harmonizing-precision design, Franz Sandner became well-known worldwide for its excelsior manufacturing technique.
+									After the Second World War, most musical instrument factories moved to Nauheim, which near the Frankfurt suburb due to the border redrawn between Germany and Czech Republic. The company started again like many other musical instrument factories and continued improving its excelsior workmanship.</p>
+							</div>
+							<!-- 段落1结束················································ -->
+							<!-- 段落2···················································· -->
+							<div class="neirong-duan">
+								<div class="duan-head clearfix">
+									<h3 class="f-l-l">Germany Boutique</h3>
+									<span class="f-l-l">Richard Schuh</span>
+								</div>
+								<p>In 1950s, Mr. Franz Sandner's daughter, Sonja, and her husband, Richard Schuh, took over the family business. In the 1980s, they began manufacturing violins and guitars, and expanded their musical enterprise to include pianos and wind instruments as well.</p>
+							</div>
+							<!-- 段落2结束················································ -->
+							<!-- 段落3···················································· -->
+							<div class="neirong-duan">
+								<div class="duan-head clearfix">
+									<h3 class="f-l-l">Global Brand</h3>
+									<span class="f-l-l">Dietmar Schuh</span>
+								</div>
+								<p>The third generation Dietmar Schuh led the company in 1980s. And in 90's the company decided to establish their own product line in China. In 2004, Chinese factory was set up in Shanghai, China.</p>
+							</div>
+							<!-- 段落3结束················································ -->
+							<h1>
+								<img src="/images/falan02.jpg" alt="" />
+							</h1>
+						</div>
+						<!-- 文章内容1结束··············································· -->
+
+						<!-- 文章内容2 福斯特·········································· -->
+						<!-- <div class="neirong fst">
+						  <img src="/images/falan03.jpg" alt="" />
+
+						  <div class="neirong-duan">
+						  </div>
+
+						  <h1>
+							<img src="/images/falan04.jpg" alt="" />
+						  </h1>
+						</div> -->
+						<!-- 文章内容2结束··············································· -->
+
+						<!-- 文章内容3 经营理念·········································· -->
+						<!-- <div class="neirong jyln">
+
+
+						  <div class="neirong-duan">
+							<div class="duan-head clearfix">
+							  <h3 class="f-l-l"></h3>
+							  <span class="f-l-l"></span>
+							</div>
+							<img src="/images/falan05.jpg" alt="" />
+							<p></p>
+						  </div>
+
+						</div> -->
+						<!-- 文章内容3结束··············································· -->
+
+						<!-- 文章内容4 重要成员·········································· -->
+						<div class="neirong zycy">
+							<!-- 段落1···················································· -->
+							<div class="neirong-duan">
+								<div class="duan-head important-head clearfix">
+									<h3 class="f-l-l">Members</h3>
+								</div>
+								<!-- 分公司1······························ -->
+								<div class="important de">
+									<h2></h2>
+									<!-- 成员1······························ -->
+									<!-- <div class="important-members clearfix">
+									  <div class="members-head-img f-l-l">
+										<img src="/images/member1.jpg" alt="">
+									  </div>
+									  <div class="members-info f-l-r">
+										<h3 class="members-name">
+
+										</h3>
+										<p class="members-intro">                  </p>
+									  </div>
+									</div> -->
+									<!-- 成员1结束·························· -->
+									<!-- 成员2······························ -->
+									<!-- <div class="important-members clearfix">
+									  <div class="members-head-img f-l-l">
+										<img src="/images/member2.jpg" alt="">
+									  </div>
+									  <div class="members-info f-l-r">
+										<h3 class="members-name">
+
+										</h3>
+										<p class="members-intro">
+
+										</p>
+									  </div>
+									</div> -->
+									<!-- 成员2结束·························· -->
+								</div>
+								<!-- 分公司1结束·························· -->
+								<!-- 分公司2······························ -->
+								<div class="important flsd">
+									<h2>Franz Sandner</h2>
+									<!-- 成员1······························ -->
+									<div class="important-members clearfix">
+										<div class="members-head-img f-l-l">
+											<img src="/images/member3.jpg" alt="">
+										</div>
+										<div class="members-info f-l-r">
+											<h3 class="members-name">CEO--Dietmar Schuh
+											</h3>
+											<p class="members-intro">The 3rd generation of Franz Sandner. Enter the company since 1980s, following his father Richard Schuh, and took over the company in 1988, led Franz Sandner to be a global brand. Franz Sandner become a popular brand in America, German, UK, Japan, South Korea...Now Mr. Franz Sandner is responsible for global marketing.
+											</p>
+										</div>
+									</div>
+									<!-- 成员1结束·························· -->
+									<!-- 成员2······························ -->
+									<div class="important-members clearfix">
+										<div class="members-head-img f-l-l">
+											<img src="/images/member4.jpg" alt="">
+										</div>
+										<div class="members-info f-l-r">
+											<h3 class="members-name">
+												Sales Director--Soraya Schuh
+											</h3>
+											<p class="members-intro">Enter the company since 1991. Responsibel for Euro and America sales promotion.
+											</p>
+										</div>
+									</div>
+									<!-- 成员2结束·························· -->
+									<!-- 成员3······························ -->
+									<div class="important-members clearfix">
+										<div class="members-head-img f-l-l">
+											<img src="/images/member5.jpg" alt="">
+										</div>
+										<div class="members-info f-l-r">
+											<h3 class="members-name">Technician--Frank
+											</h3>
+											<p class="members-intro">Frank is professional in violin product and design with many year of experience. He's now working in Franz Sandner and in charge of violin production and quality.
+											</p>
+										</div>
+									</div>
+									<!-- 成员3结束·························· -->
+								</div>
+								<!-- 分公司2结束·························· -->
+
+								<!-- 分公司3······························ -->
+								<div class="important sh">
+									<h2>Sandner Dynasty</h2>
+									<!-- 成员1······························ -->
+									<div class="important-members clearfix">
+										<div class="members-head-img f-l-l">
+											<img src="/images/member6.jpg" alt="">
+										</div>
+										<div class="members-info f-l-r">
+											<h3 class="members-name">General Manager--Teddy CHEN
+											</h3>
+											<p class="members-intro">Teddy was born in a piano family in Taiwan, and had knowledge of piano industry from childhood. When got 23 years old, Teddy started working on the import and export of musical instruments, which gave him an in-depth understanding of the music global market. He entered Sandner Dynasty sicne 2002, and takes charge of Chinese factory and market promotion.
+											</p>
+										</div>
+									</div>
+									<!-- 成员1结束·························· -->
+									<!-- 成员2······························ -->
+									<div class="important-members clearfix">
+										<div class="members-head-img f-l-l">
+											<img src="/images/member9.png" alt="">
+										</div>
+										<div class="members-info f-l-r">
+											<h3 class="members-name">Technical Director--Ta-Chia Lin
+											</h3>
+											<p class="members-intro">Mr. Lin steps into the field of piano manufacturing since 1979. He’s a lecturer of IAPBT (International Association of Piano Builders and Technicians), and has been invited to give speech about piano technical in many countries. Mr. Lin also served as secretary general of IAPBT, and won the innovation award of IAPBT, as he published piano manufacturing and innovation technic and tools for many times in Japan. Now, he is the technical adviser for FRANZ SANDNER piano and responsible for the piano design, production process, and personal training.
+											</p>
+										</div>
+									</div>
+									<!-- 成员2结束·························· -->
+									<!-- 成员3······························ -->
+									<div class="important-members clearfix">
+										<div class="members-head-img f-l-l">
+											<img src="/images/member7.jpg" alt="">
+										</div>
+										<div class="members-info f-l-r">
+											<h3 class="members-name">Vice President--Diana Zhang
+											</h3>
+											<p class="members-intro">Diana is professional on the field of financial management, financial audit, and cooperate management for about 15 years. She is now responsibel for financial management and administration of Shanghai company.
+											</p>
+										</div>
+									</div>
+									<!-- 成员3结束·························· -->
+								</div>
+								<!-- 分公司3结束·························· -->
+
+								<!-- 分公司4······························ -->
+								<div class="important sh">
+									<h2>Taiwan Branch</h2>
+									<!-- 成员1······························ -->
+									<div class="important-members clearfix">
+										<div class="members-head-img f-l-l">
+											<img src="/images/member8.jpg" alt="">
+										</div>
+										<div class="members-info f-l-r">
+											<h3 class="members-name">Manager--Meilan Lin
+											</h3>
+											<p class="members-intro">Mrs. Lin used to work on JS Bach and other musical instrument company. Now she is in charge of Sandner in Taiwan. She's very fond of music and dedicates to provide professional and price-reasonable musical instrument to customer.
+											</p>
+										</div>
+									</div>
+									<!-- 成员1结束·························· -->
+									<!-- 成员2······························ -->
+
+									<!-- 成员2结束·························· -->
+
+								</div>
+								<!-- 分公司4结束·························· -->
+							</div>
+							<!-- 段落1结束················································ -->
+						</div>
+						<!-- 文章内容4结束··············································· -->
+
+						<!-- 文章内容5 经营理念·········································· -->
+						<!-- <div class="neirong jyln">
+
+
+						  <div class="neirong-duan">
+							<div class="duan-head important-head clearfix">
+							  <h3 class="f-l-l">Technical Team</h3>
+							  <span class="f-l-l"></span>
+							</div>
+							<img src="/images/falan06.jpg" alt="" />
+							<p></p>
+							<img src="/images/falan07.jpg" alt="" />
+						  </div>
+
+						</div> -->
+						<!-- 文章内容5结束··············································· -->
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+[!--temp.footer--]
+</body>
+</html>

@@ -1,0 +1,350 @@
+/*
+ * By Freed 
+ * flyxz@126.com
+ * 2016-6-18
+*/
+body a{color: #E29564}
+body a:hover{color: #C56400}
+body .main .list-group-item{
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+}
+body .pagination>.active>a,
+body .pagination>.active>a:focus,
+body .pagination>.active>a:hover,
+body .pagination>.active>span,
+body .pagination>.active>span:focus,
+body .pagination>.active>span:hover{
+	background-color: #cd7a4e;
+	border-color:#cd7a4e
+}
+.sanjiao{
+	width: 0;
+	height: 0;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 6px solid #fff;
+	position: absolute;
+	top:10px;
+	right:6px;
+}
+.sanjiao.on{
+
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 6px solid #fff;
+	right:10px;
+}
+.all-list-left-type .all-list-left-con{
+	padding: 0;
+	margin:0;
+}
+.main{
+	width: 1200px;
+	margin: 0 auto;
+	/*border: 1px solid #ccc;*/
+	/*background-color: #ddd;*/
+}
+.all-list-warp{
+	width: 1200px;
+	margin: 0 auto;
+
+}
+.list-head-img{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+
+}
+.list-head-img-active{
+	position: absolute;
+	right:100px;
+	top:0;
+}
+.head-img-warp{
+	width:100%;
+	height:244px;
+}
+.head-img-warp .nav{
+	width:100%;
+	background-color: #000;
+	margin:0;
+	height: 176px;
+	position: relative;
+}
+.list-title{
+	text-align: center;
+	border-top:#ccc solid 1px;
+	border-bottom:#ccc solid 1px;
+
+}
+.list-title>h2{
+	margin:0;
+	font:32px/60px 微软雅黑;
+}
+.list-head-img>img{
+	width: 1200px;
+}
+.all-list-left{
+	width: 215px;
+	min-height: 904px;
+	/*border: 1px solid #ccc;*/
+	/*background-color: #fff;*/
+	padding-top: 35px;
+	padding-bottom: 196px;
+	background:#fff url("/images/icon/list_rigth_btm.png") right bottom no-repeat;
+}
+.all-list-left-head{
+	border-bottom: 2px solid #DABB90;
+	padding-left: 20px;
+	font:20px/40px 微软雅黑;
+	color: #fff;
+	padding-top: 20px;
+	margin-top: 0;
+	background-color: #E29564;
+	display: none;
+}
+.all-list-left-type{
+	/*padding-top: 20px;*/
+	margin-left: 15px;
+	width: 184px;
+	margin-bottom: 38px;
+}
+.all-list-left-type .list-group-item{
+	background-color: #a6a6a6;
+}
+.all-list-left .list-group-item{
+	border: 1px solid #ccc;
+
+}
+dt.list-group-item a{
+	color: #333;
+	line-height: 24px;
+	display: inline-block;
+	/*margin-left: 10px;*/
+}
+.all-list-left-title,
+.all-list-left-con{
+	border:none;
+}
+.all-list-left-title a{
+	font:16px/32px 微软雅黑;
+	color: #fff;
+}
+.all-list-left-title a:hover{
+	color: #fff;
+}
+.list-group-warp .all-list-left-title{
+	/*border-top: 1px solid #DABB90;*/
+	margin-left: 15px;
+	width:184px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #A6A6A6;
+	padding-top:0;
+	padding-bottom:0;
+	padding-left: 10px;
+	padding-right: 0;
+	cursor: pointer;
+}
+
+/*左侧完成·······················································*/
+
+/*右侧开始·······················································*/
+.all-list-right{
+	width: 975px;
+	margin-left: 10px;
+	/*background-color: #fff;*/
+}
+.all-list-right-head{
+	border-bottom: 1px solid #E29564;
+	display: none;
+}
+.list-right-current{
+	/*background-color: #fff;*/
+	min-height: 904px;
+}
+.list-right-head-title{
+    font-family: "Microsoft YaHei", SimSun, SimHei;
+    color: #E29564;
+}
+.search .btn-primary{
+	width: 100px;
+    background-color: #E29564;
+    border:solid 1px #E29564;
+}
+.search .btn-primary:hover{
+	width: 100px;
+    background-color: #E29564;
+    border:solid 1px #E29564;
+}
+.search{
+	margin-right: 20px;
+	margin-top: 10px;
+	display: none;
+}
+.list-product{
+	width: 318px;
+	/*border: 1px solid #ccc;*/
+	margin-right: 10px;
+	margin-bottom: 10px;
+	/*padding-bottom: 10px;*/
+	/*border-radius: 3px;*/
+	/*height: 317px;*/
+	background-color: #fff;
+}
+.list-product>a{
+	position: relative;
+	width:100%;
+}
+/*.list-product:hover{border: 1px solid #E29564;}*/
+.list-product-img img{
+	width: 100%;
+	min-height:318px;
+	max-height: 318px;
+}
+.load-all-product{
+	width: 990px;
+	/*padding:  20px 0;*/
+}
+.load-all-product p{
+	max-width: 976px;
+	background-color: #fff;
+	padding: 10px;
+	margin-bottom: 0;
+}
+.load-all-product p img{max-width: 900px;}
+.list-product-title,
+.list-product-intro,
+.list-product-price{
+	padding-left: 20px;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	text-decoration: none;
+}
+.list-product-img{
+	width: 318px;
+	height: 318px;
+}
+
+.all-list-left-type>dd,
+.all-list-left-type>dt{
+	cursor: pointer;
+	transition: all 1s ease 0s;
+}
+.all-list-left-type>dd:hover
+{
+	background-color: #929191;
+}
+.all-list-left-type>dt:hover{
+	background-color: #eee;
+}
+
+
+
+
+
+
+
+.list-menu{
+	height:60px;
+	line-height:60px;
+}
+.list-new-logo{
+	width:215px;
+	background: url("/images/icon/new_fz.png") 0 0 no-repeat;
+}
+.list-new-logo>h3{
+	text-indent:-9999px;
+
+}
+.list-page-num{
+	height:60px;
+	padding-left: 10px;
+}
+.list-page-num .pagination{
+	margin:13px 0;
+}
+.list-title-subtitle{
+	float: right;
+	cursor: pointer;
+}
+.list-title-subtitle>h3{
+	font:18px/34px 'Microsoft Yahei';
+	padding: 5px 30px 5px 15px;
+	background-color: #cd7a4e;
+	color: #fff;
+	margin:0;
+	margin-top: 8px;
+}
+.all-list-left-type .all-list-left-con{
+	background-color: #fff;
+	text-align: center;
+	border-top: none;
+}
+.all-list-left-type .all-list-left-title a:hover{
+	color: #fff;
+}
+.all-list-left-type .all-list-left-con a:hover{
+	color: #333;
+}
+.list-group-warp{
+	margin-bottom:10px;
+}
+.list-product-title-warp{
+	width:234px;
+	height:95px;
+	margin-left:42px;
+	margin-top: 34px;
+	border:#ccc solid 1px;
+	background-color: #F9F9F9;
+}
+.list-product-title-warp .list-product-title{
+	font-size: 36px;
+	text-align: center;
+	line-height:54px;
+	font-family: 'Microsoft Yahei';
+	color: #000;
+	margin: 0;
+	font-weight:bold;
+	padding: 0;
+}
+.list-product-title-warp .list-product-price{
+	font-size: 18px;
+	text-align: center;
+	line-height:24px;
+	font-family: 'Microsoft Yahei';
+	color: #000;
+	margin: 0;
+	font-weight:200;
+	padding: 0;
+}
+.page-list-item>a{
+	cursor: pointer;
+}
+.inner-nav{
+	width:1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

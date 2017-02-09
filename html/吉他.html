@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ch-ZN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<?php
+$bclassid=$GLOBALS[navclassid]; //取得本栏目id
+?>
+	[e:loop={"select * from [!db.pre!]enewsclass where classid = '$bclassid' order by classid",0,24,0}]
+	<title><?=$bqr[bname]?>_<?=$public_r['add_sitename']?></title>
+	<meta name="keywords" content="<?=$bqr[classpagekey]?>" />
+	<meta name="description" content="<?=$bqr[intro]?>" />
+	[/e:loop]
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
+	<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/xin-list.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.SuperSlide.2.1.1.js"></script>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="/js/xin-list.js"></script>
+	<script>
+		$(function () {
+			//	0.页面加载首先获取热门钢琴
+			chaxunremen('37,38,35');
+		})
+	</script>
+</head>
+<body>
+<!-- 头部··························································· -->
+[!--temp.header--]
+<!-- 头部结束························································ -->
+<!-- 列表头部广告············································ -->
+<nav class="head-img-warp">
+	<div class="nav">
+		<div class="inner-nav">
+			<!--底部背景图-->
+			<div class="list-head-img">
+				<script src="http://en.franzsandner.com/d/js/acmsd/thea9.js"></script>
+			</div>
+			<!--右侧运动小图-->
+			<div class="list-head-img-active">
+				<script src="http://en.franzsandner.com/d/js/acmsd/thea10.js"></script>
+			</div>
+		</div>
+	</div>
+</nav>
+<!--/ 列表头部广告············································ -->
+<!-- 商品列表页······················································ -->
+<section class="main">
+	<div class="all-list-warp">
+		<!--列表标题-->
+		<div class="list-title">
+			<h2>Guitar</h2>
+		</div>
+		<div class="list-menu clearfix">
+			<div class="list-new-logo f-l-l">
+				<h3>德国法兰山德</h3>
+			</div>
+			<div class="list-page-num f-l-l">
+				<ul class="pagination clearfix">
+					<li class="active page-list-item f-l-l" data-page="1"><a>1</a></li>
+				</ul>
+			</div>
+			<div class="list-title-subtitle" data-click="0">
+				<h3>Popular Products</h3>
+				<span class="sanjiao"></span>
+			</div>
+		</div>
+		<!-- 列表内容················································ -->
+		<div class="all-list clearfix">
+			<!-- 列表左侧分类········································ -->
+			<div class="all-list-left f-l-l">
+				<div class="list-group-warp">
+					<div class="list-group-item all-list-left-title"><a onclick="chaxunremen('37,38,35')">Popular Products</a></div>
+				</div>
+				<div class="list-group-warp">
+					<div class="list-group-item all-list-left-title">
+						<a >Sandner Guitar</a>
+						<span class="sanjiao"></span>
+					</div>
+					<dl class="all-list-left-type type1 list-group" style="display: none">
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(37,$(this))">Classic Guitar</a></dt>
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(38,$(this))">Acoustic Guitar</a></dt>
+					</dl>
+				</div>
+				<div class="list-group-warp">
+					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(35,$(this))">FASAN</a></div>
+				</div>
+				<!-- <dl class="all-list-left-type type6 list-group">
+					<dd class="list-group-item all-list-left-title"><a href="">提琴专业技术</a></dd>
+					<dt class="list-group-item all-list-left-con"><a href="">提琴历史</a></dt>
+					<dt class="list-group-item all-list-left-con"><a href="">保养</a></dt>
+					<dt class="list-group-item all-list-left-con"><a href="">常见问题与维修</a></dt>
+				</dl> -->
+			</div>
+			<!-- 左侧种类列表结束··············································· -->
+			<!-- 右侧详细列表··················································· -->
+			<div class="all-list-right f-l-l">
+				<!-- 列表头及搜索框············································· -->
+				<div class="all-list-right-head clearfix">
+					<h3 class="list-right-head-title f-l-l">Popular Products</h3>
+					<div class="search f-l-r">
+						<form action="">
+							<button class="btn  btn-primary f-l-r" type="submit ">搜索</button>
+							<div class="form-group f-l-r">
+								<label class="sr-only" for="search-con">输入搜索内容</label>
+								<input class="form-control f-l-l" id="search-con "  type="text" placeholder="输入搜索内容">
+							</div>
+
+						</form>
+					</div>
+				</div>
+				<div class="list-right-current">
+					<ul class="clearfix load-all-product">
+
+					</ul>
+					<!-- loader`````````````````````````````` -->
+					<div class="loaders" style="display: none;">
+						<div class="loader">
+							<div class="loader-inner line-scale">
+								<div></div><div></div><div></div><div></div><div></div>
+							</div>
+						</div>
+					</div>
+					<!-- loader`````````````````````````````` -->
+				</div>
+			</div>
+			<!-- 右侧详细列表结束··················································· -->
+		</div>
+		<!-- 列表内容················································ -->
+	</div>
+</section>
+[!--temp.footer--]
+</body>
+</html>
+<!--
+ * By Freed
+ * flyxz@126.com
+ * 2016-6-7
+ -->

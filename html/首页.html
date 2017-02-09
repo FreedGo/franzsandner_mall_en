@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ch-ZN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="sogou_site_verification" content="JsL4Pnt9hq"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>[!--pagetitle--]</title>
+	<meta name="keywords" content="[!--pagekey--]" />
+	<meta name="description" content="[!--pagedes--]" />
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
+	<link rel="stylesheet" href="/css/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.SuperSlide.2.1.1.js"></script>
+	<script src="/js/jquery-ui-1.10.3.min.js"></script>
+	<script src="/js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/js/index.js"></script>
+	<style type="text/css">
+		/*.section3,.section4,.section5{*/
+		/*!*吉他,提琴,钢琴隐藏掉*!*/
+		/*display: none!important;*/
+		/*}*/
+	</style>
+	<!--<script type="text/javascript" src="//s.union.360.cn/64262.js"></script>-->
+</head>
+<body>
+<!-- 第一屏······························································ -->
+<!-- 头部··························································· -->
+[!--temp.header--]
+<!-- 头部结束························································ -->
+<!-- 轮播图·························································· -->
+<div id="dowebok">
+	<div class="section section1">
+		[e:loop={"select * from phome_enewsad where classid=2 order by onclick desc",10,24,0}]
+		<div class="slide">
+			<h3 style="background:url(<?=$bqr[picurl]?>) #194982 center 0 no-repeat;"><a target="_blank" href="<?=$bqr[url]?>"></a></h3>
+		</div>
+		[/e:loop]
+		<!-- 首页插入的新闻，法兰山德新闻 -->
+		<div class="charu">
+			<div class="index-news-up clearfix">
+				<div class="news-left-con f-l-l">
+					<div class="news-left-title f-l-l">
+						<h2>公<br>司<br>動<br>態</h2>
+					</div>
+					<ul class="news-head f-l-l">
+						[e:loop={"select * from phome_ecms_news where classid=38 order by id desc limit 1",10,24,0}]
+						<li class="news-left-con-head" ><a href="<?=$bqr[titleurl]?>"><?=$bqr[title]?></a></li>
+						[/e:loop]
+						[e:loop={"select * from phome_ecms_news where classid=38 order by id desc limit 2,5",10,24,0}]
+						<li><a href="<?=$bqr[titleurl]?>"><?=$bqr[title]?></a></li>
+						[/e:loop]
+					</ul>
+				</div>
+				<div class="index-news-down f-l-l">
+					<ul class="clearfix index-news-down-list ">
+						[e:loop={"select * from phome_ecms_news where classid=38    and isgood=1 order by id desc limit 4",10,24,0}]
+						<li class="f-l-l news-down-list-detaill" >
+							<a href="<?=$bqr[titleurl]?>">
+								<div class="news-down-list-img"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></div>
+								<h3><?=$bqr[title]?></h3>
+							</a>
+						</li>
+						[/e:loop]
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 首页插入的新闻，法兰山德新闻结束 -->
+	</div>
+	<!-- 轮播图结束······················································ -->
+	<!-- 网站新闻························································ -->
+	<div class="index-news-show-warp section section2" >
+		<div class="index-news-show ">
+			<div class="index-news-up clearfix">
+				<div class="news-left-con f-l-l">
+					<div class="news-left-title f-l-l">
+						<h2>行<br>業<br>新<br>聞</h2>
+					</div>
+					<ul class="news-head f-l-l">
+						[e:loop={"select * from phome_ecms_news where classid=37 order by id desc limit 1",10,24,0}]
+						<li class="news-left-con-head" ><a href="<?=$bqr[titleurl]?>"><?=$bqr[title]?></a></li>
+						[/e:loop]
+						[e:loop={"select * from phome_ecms_news where classid=37 order by id desc limit 2,5",10,24,0}]
+						<li><a href="<?=$bqr[titleurl]?>"><?=$bqr[title]?></a></li>
+						[/e:loop]
+					</ul>
+				</div>
+
+				<div class="index-news-down f-l-l">
+					<ul class="clearfix index-news-down-list ">
+						[e:loop={"select * from phome_ecms_news where classid=37 and isgood=1 order by id desc limit 4",10,24,0}]
+						<li class="f-l-l news-down-list-detaill" >
+							<a href="<?=$bqr[titleurl]?>">
+								<div class="news-down-list-img"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></div>
+								<h3><?=$bqr[title]?></h3>
+							</a>
+						</li>
+						[/e:loop]
+					</ul>
+				</div>
+			</div>
+			<div class="index-news-up clearfix">
+				<div class="news-left-con f-l-l">
+					<div class="news-left-title f-l-l">
+						<h2>鋼<br>琴<br>新<br>聞</h2>
+					</div>
+					<ul class="news-head f-l-l">
+						[e:loop={"select * from phome_ecms_news where classid=34 order by id desc limit 1",10,24,0}]
+						<li class="news-left-con-head" ><a href="<?=$bqr[titleurl]?>"><?=$bqr[title]?></a></li>
+						[/e:loop]
+						[e:loop={"select * from phome_ecms_news where classid=34 order by id desc limit 2,5",10,24,0}]
+						<li><a href="<?=$bqr[titleurl]?>"><?=$bqr[title]?></a></li>
+						[/e:loop]
+					</ul>
+				</div>
+
+				<div class="index-news-down f-l-l">
+					<ul class="clearfix index-news-down-list ">
+						[e:loop={"select * from phome_ecms_news where classid=34 and isgood=1 order by id desc limit 4",10,24,0}]
+						<li class="f-l-l news-down-list-detaill" >
+							<a href="<?=$bqr[titleurl]?>">
+								<div class="news-down-list-img"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></div>
+								<h3><?=$bqr[title]?></h3>
+							</a>
+						</li>
+						[/e:loop]
+					</ul>
+				</div>
+			</div>
+			<div class="index-news-up clearfix">
+				<div class="news-left-con f-l-l">
+					<div class="news-left-title f-l-l">
+						<h2>提<br>琴<br>新<br>聞</h2>
+					</div>
+					<ul class="news-head f-l-l">
+						[e:loop={"select * from phome_ecms_news where classid=35 order by id desc limit 1",10,24,0}]
+						<li class="news-left-con-head" ><a href="<?=$bqr[titleurl]?>"><?=$bqr[title]?></a></li>
+						[/e:loop]
+						[e:loop={"select * from phome_ecms_news where classid=35 order by id desc limit 2,5",10,24,0}]
+						<li><a href="<?=$bqr[titleurl]?>"><?=$bqr[title]?></a></li>
+						[/e:loop]
+					</ul>
+				</div>
+
+				<div class="index-news-down f-l-l">
+					<ul class="clearfix index-news-down-list ">
+						[e:loop={"select * from phome_ecms_news where classid=35 and isgood=1 order by id desc limit 4",10,24,0}]
+						<li class="f-l-l news-down-list-detaill" >
+							<a href="<?=$bqr[titleurl]?>">
+								<div class="news-down-list-img"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></div>
+								<h3><?=$bqr[title]?></h3>
+							</a>
+						</li>
+						[/e:loop]
+					</ul>
+				</div>
+			</div>
+			<div class="index-news-up clearfix">
+				<div class="news-left-con f-l-l">
+					<div class="news-left-title f-l-l">
+						<h2>吉<br>他<br>新<br>聞</h2>
+					</div>
+					<ul class="news-head f-l-l">
+						[e:loop={"select * from phome_ecms_news where classid=36 order by id desc limit 1",10,24,0}]
+						<li class="news-left-con-head" ><a href="<?=$bqr[titleurl]?>"><?=$bqr[title]?></a></li>
+						[/e:loop]
+						[e:loop={"select * from phome_ecms_news where classid=36 order by id desc limit 2,5",10,24,0}]
+						<li><a href="<?=$bqr[titleurl]?>"><?=$bqr[title]?></a></li>
+						[/e:loop]
+					</ul>
+				</div>
+
+				<div class="index-news-down f-l-l">
+					<ul class="clearfix index-news-down-list ">
+						[e:loop={"select * from phome_ecms_news where classid=36 and isgood=1 order by id desc limit 4",10,24,0}]
+						<li class="f-l-l news-down-list-detaill" >
+							<a href="<?=$bqr[titleurl]?>">
+								<div class="news-down-list-img"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></div>
+								<h3><?=$bqr[title]?></h3>
+							</a>
+						</li>
+						[/e:loop]
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 网站新闻结束···················································· -->
+	<!-- 钢琴展示························································ -->
+	<!--<div class="index-pinao-show-warp section section3 " style="background:url(../images/piano_bg.png) center no-repeat;background-size: cover;">-->
+	<!--<div class="index-pinao-show clearfix">-->
+	<!--<div class="index-pinao-show-fullfpage f-l-l">-->
+
+	<!--[e:loop={"select * from phome_ecms_photo where classid in(16,17) and isgood=1 order by id desc limit 1",10,24,0}]-->
+	<!--<a class="f-l-l piano-bg-warp clearfix" href="<?=$bqr[titleurl]?>">-->
+	<!--<img  src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>">-->
+	<!--</a>-->
+	<!--<div class="index-pinao-price f-l-l">-->
+	<!--<h2><?=$bqr[brand]?></h2>-->
+	<!--<h3><?=$bqr[title]?></h3>-->
+	<!--<div class="index-pinao-price-msg"><?=$bqr[futitle]?><br>厂家直销，质量保证</div>-->
+	<!--<h4>售价：￥<?=$bqr[money]?></h4>-->
+	<!--<a href="<?=$bqr[titleurl]?>">立即购买</a>-->
+	<!--</div>-->
+	<!--[/e:loop]-->
+
+	<!--</div>-->
+	<!--<div class="index-pinao-show-halfpage-warp f-l-l">-->
+	<!--[e:loop={"select * from phome_ecms_photo where classid in(16,17) and isgood=2 order by id desc limit 2",10,24,0}]-->
+	<!--<div class="index-pinao-show-halfpage halfpage1  f-l-l">-->
+	<!--<a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a>-->
+	<!--</div>-->
+	<!--[/e:loop]-->
+	<!--&lt;!&ndash;<div class="index-pinao-show-halfpage halfpage2  f-l-l">-->
+	<!--<a href=""><img src="../images/pinao_lit1.png" alt=""></a>-->
+	<!--</div>&ndash;&gt;-->
+	<!--</div>-->
+
+	<!--</div>-->
+	<!--</div>-->
+	<!-- 钢琴展示结束····················································· -->
+
+	<!-- 提琴展示························································· -->
+	<!--<div class="index-violin-show-warp section section4" style="background:url(../images/violin_bg.png) center no-repeat;background-size: cover;">-->
+	<!--<div class="index-violin-show clearfix">-->
+	<!--&lt;!&ndash; 左侧大图················································· &ndash;&gt;-->
+	<!--<div class="index-violin-show-left f-l-l">-->
+	<!--[e:loop={"select * from phome_ecms_photo where classid in(26,27,28,29,30) and isgood=1 order by id desc limit 1",10,24,0}]-->
+	<!--<a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a>-->
+	<!--[/e:loop]-->
+	<!--</div>-->
+	<!--&lt;!&ndash; 右侧小图················································· &ndash;&gt;-->
+	<!--<div class="index-violin-show-right f-l-l">-->
+	<!--<ul class="clearfix">-->
+	<!--[e:loop={"select * from phome_ecms_photo where classid in(26,27,28,29,30) and isgood=2 order by id desc limit 3",10,24,0}]-->
+	<!--<li class="f-l-l violin-list-lit"><a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a></li>-->
+	<!--[/e:loop]-->
+
+	<!--[e:loop={"select * from phome_ecms_photo where classid in(26,27,28,29,30) and isgood=3 order by id desc limit 2",10,24,0}]-->
+	<!--<li class="f-l-l violin-list-big"><a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a></li>-->
+	<!--[/e:loop]-->
+	<!--</ul>-->
+	<!--</div>-->
+	<!--</div>-->
+	<!--</div>-->
+	<!-- 吉他展示························································· -->
+	<!--<div class="index-jita-show-warp section section5" style="background:url(../images/jita_bg.png) center no-repeat;background-size: cover;">-->
+
+	<!--<div class="index-jita-show clearfix">-->
+	<!--&lt;!&ndash; 左侧大图················································· &ndash;&gt;-->
+	<!--<div class="index-jita-show-right f-l-l">-->
+	<!--<ul class="clearfix">-->
+
+	<!--[e:loop={"select * from phome_ecms_photo where classid in(35,37,38) and isgood=3 order by id desc limit 3",10,24,0}]-->
+	<!--<li class="f-l-l jita-list-lit"><a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a></li>-->
+	<!--[/e:loop]-->
+
+	<!--[e:loop={"select * from phome_ecms_photo where classid in(35,37,38) and isgood=2 order by id desc limit 2",10,24,0}]-->
+	<!--<li class="f-l-l jita-list-big"><a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a></li>-->
+	<!--[/e:loop]-->
+	<!--</ul>-->
+	<!--</div>-->
+	<!--&lt;!&ndash; 右侧小图················································· &ndash;&gt;-->
+
+	<!--<div class="index-jita-show-left f-l-l">-->
+	<!--[e:loop={"select * from phome_ecms_photo where classid in(35,37,38) and isgood=1 order by id desc limit 1",10,24,0}]-->
+	<!--<a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a>-->
+	<!--[/e:loop]-->
+	<!--</div>-->
+	<!--</div>-->
+
+	<!--</div>-->
+
+	<div class="footer section section6 fp-auto-height">
+		[!--temp.footer--]
+	</div>
+</div>
+</body>
+</html>

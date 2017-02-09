@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ch-ZN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>Franz Sandner Piano</title>
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
+	<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/xin-list.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.SuperSlide.2.1.1.js"></script>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/js/xin-list.js"></script>
+	<script>
+		$(function () {
+			//	0.页面加载首先获取热门钢琴
+			chaxunremen('11,16,17,18,21,22,23,24,25,59');
+		})
+	</script>
+</head>
+<body>
+<!-- 头部··························································· -->
+[!--temp.header--]
+<!-- 头部结束························································ -->
+<!-- 列表头部广告············································ -->
+<nav class="head-img-warp">
+	<div class="nav">
+		<div class="inner-nav">
+			<!--底部背景图-->
+			<div class="list-head-img">
+				<script src="http://en.franzsandner.com/d/js/acmsd/thea5.js"></script>
+			</div>
+			<!--右侧运动小图-->
+			<div class="list-head-img-active">
+				<script src="http://en.franzsandner.com/d/js/acmsd/thea6.js"></script>
+			</div>
+		</div>
+	</div>
+</nav>
+<!--/ 列表头部广告············································ -->
+<!-- 商品列表页······················································ -->
+<section class="main">
+	<div class="all-list-warp">
+		<!-- 列表内容················································ -->
+		<div class="all-list clearfix">
+			<!-- 列表左侧分类········································ -->
+			<div class="all-list-left f-l-l">
+				<div class="list-group-warp">
+					<div class="list-group-item all-list-left-title"><a onclick="chaxunremen('11,16,17,18,21,22,23,24,25,59')">Popular Products</a></div>
+				</div>
+				<div class="list-group-warp">
+					<div class="list-group-item all-list-left-title">
+						<a >Upright Piano</a>
+						<span class="sanjiao"></span>
+					</div>
+					<dl class="all-list-left-type type1 list-group" style="display: none">
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(21,$(this))">SP Serial</a></dt>
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(22,$(this))">FS Serial</a></dt>
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(59,$(this))">Other Serial</a></dt>
+					</dl>
+				</div>
+				<div class="list-group-warp">
+					<div class="list-group-item all-list-left-title">
+						<a onclick="chaxunone(,$(this).html())">Grand Piano</a>
+						<span class="sanjiao"></span>
+
+					</div>
+					<dl class="all-list-left-type type1 list-group" style="display: none">
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(23,$(this))">Salon Grand</a></dt>
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(24,$(this))">Professional Grand</a></dt>
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(25,$(this))">Concerto Grand</a></dt>
+					</dl>
+				</div>
+				<div class="list-group-warp">
+					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(11,$(this))">Eletric Piano</a></div>
+				</div>
+				<div class="list-group-warp">
+					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(76,$(this))">Bench</a></div>
+				</div>
+			</div>
+			<!-- 左侧种类列表结束··············································· -->
+			<!-- 右侧详细列表··················································· -->
+			<div class="all-list-right f-l-l">
+				<!-- 列表头及搜索框············································· -->
+				<div class="all-list-right-head clearfix">
+					<h3 class="list-right-head-title f-l-l">Popular Products</h3>
+					<div class="search f-l-r">
+						<form action="">
+							<button class="btn  btn-primary f-l-r" type="submit ">搜索</button>
+							<div class="form-group f-l-r">
+								<label class="sr-only" for="search-con">输入搜索内容</label>
+								<input class="form-control f-l-l" id="search-con "  type="text" placeholder="输入搜索内容">
+							</div>
+
+						</form>
+					</div>
+				</div>
+				<div class="list-right-current">
+					<ul class="clearfix load-all-product">
+
+					</ul>
+					<!-- loader`````````````````````````````` -->
+					<div class="loaders" style="display: none;">
+						<div class="loader">
+							<div class="loader-inner line-scale">
+								<div></div><div></div><div></div><div></div><div></div>
+							</div>
+						</div>
+					</div>
+					<!-- loader`````````````````````````````` -->
+				</div>
+			</div>
+			<!-- 右侧详细列表结束··················································· -->
+		</div>
+		<!-- 列表内容················································ -->
+	</div>
+</section>
+[!--temp.footer--]
+</body>
+</html>
+<!--
+ * By Freed
+ * flyxz@126.com
+ * 2016-6-7
+ -->

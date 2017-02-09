@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0039)http://www.franzsandner.com/sales_f.php -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<?php
+$bclassid=$GLOBALS[navclassid]; //取得本欄目id
+?>
+	[e:loop={"select * from [!db.pre!]enewsclass where classid = '$bclassid' order by classid",0,24,0}]
+	<title><?=$bqr[bname]?>_<?=$public_r['add_sitename']?></title>
+	<meta name="keywords" content="<?=$bqr[classpagekey]?>" />
+	<meta name="description" content="<?=$bqr[intro]?>" />
+	[/e:loop]
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
+	<link href="/css/xin-sale-net.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/js/sale-net.js"></script>
+	<script type="text/javascript" src="/js/raphael-min.js"></script>
+	<script type="text/javascript" src="/js/chinaMapConfig.js"></script>
+	<script type="text/javascript" src="/js/map.js"></script>
+	<script type="text/javascript" src="/js/SyntaxHighlighter.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<!----統計代理商---->
+	<?php
+	//蘇州
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='江蘇'");
+          while($tmp=mysql_fetch_row($count)){
+          $jiangsu = $tmp[0];
+     }
+    //河南
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='河南'");
+          while($tmp=mysql_fetch_row($count)){
+          $henan = $tmp[0];
+     }
+      //安徽
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='安徽'");
+          while($tmp=mysql_fetch_row($count)){
+          $anhui = $tmp[0];
+     }
+      //浙江
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='浙江'");
+          while($tmp=mysql_fetch_row($count)){
+          $zhejiang = $tmp[0];
+     }
+      //遼寧
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='遼寧'");
+          while($tmp=mysql_fetch_row($count)){
+          $liaoning = $tmp[0];
+     }
+      //北京
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='北京'");
+          while($tmp=mysql_fetch_row($count)){
+          $beijing = $tmp[0];
+     }
+      //湖北
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='湖北'");
+          while($tmp=mysql_fetch_row($count)){
+          $hubei = $tmp[0];
+     }
+      //吉林
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='吉林'");
+          while($tmp=mysql_fetch_row($count)){
+          $jilin = $tmp[0];
+     }
+      //上海
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='上海'");
+          while($tmp=mysql_fetch_row($count)){
+          $shanghai = $tmp[0];
+     }
+      //廣西
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='廣西'");
+          while($tmp=mysql_fetch_row($count)){
+          $guangxi = $tmp[0];
+     }
+      //四川
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='四川'");
+          while($tmp=mysql_fetch_row($count)){
+          $sichuan = $tmp[0];
+     }
+      //貴州
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='貴州'");
+          while($tmp=mysql_fetch_row($count)){
+          $guizhou = $tmp[0];
+     }
+      //湖南
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='湖南'");
+          while($tmp=mysql_fetch_row($count)){
+          $hunan = $tmp[0];
+     }
+           //山東
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='山東'");
+          while($tmp=mysql_fetch_row($count)){
+          $shandong = $tmp[0];
+     }
+           //廣東
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='廣東'");
+          while($tmp=mysql_fetch_row($count)){
+          $guangdong = $tmp[0];
+     }
+           //江西
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='江西'");
+          while($tmp=mysql_fetch_row($count)){
+          $jiangxi = $tmp[0];
+     }
+           //福建
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='福建'");
+          while($tmp=mysql_fetch_row($count)){
+          $fujian = $tmp[0];
+     }
+           //雲南
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='雲南'");
+          while($tmp=mysql_fetch_row($count)){
+          $yunnan = $tmp[0];
+     }
+	 //海南
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='海南'");
+          while($tmp=mysql_fetch_row($count)){
+          $hainan = $tmp[0];
+     }
+      //山西
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='山西'");
+          while($tmp=mysql_fetch_row($count)){
+          $shanxi = $tmp[0];
+     }
+      //河北
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='河北'");
+          while($tmp=mysql_fetch_row($count)){
+          $hebei = $tmp[0];
+     }
+      //內蒙古
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='內蒙古'");
+          while($tmp=mysql_fetch_row($count)){
+          $neimongol = $tmp[0];
+     }
+      //天津
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='天津'");
+          while($tmp=mysql_fetch_row($count)){
+          $tianjin = $tmp[0];
+     }
+      //甘肅
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='甘肅'");
+          while($tmp=mysql_fetch_row($count)){
+          $gansu = $tmp[0];
+     }
+      //陝西
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='陝西'");
+          while($tmp=mysql_fetch_row($count)){
+          $shaanxi = $tmp[0];
+     }
+      //澳門
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='澳門'");
+          while($tmp=mysql_fetch_row($count)){
+          $aomen = $tmp[0];
+     }
+      //香港
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='香港'");
+          while($tmp=mysql_fetch_row($count)){
+          $xianggang = $tmp[0];
+     }
+      //臺灣
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='臺灣'");
+          while($tmp=mysql_fetch_row($count)){
+          $taiwan = $tmp[0];
+     }
+      //青海
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='青海'");
+          while($tmp=mysql_fetch_row($count)){
+          $qinghai = $tmp[0];
+     }
+      //西藏
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='西藏'");
+          while($tmp=mysql_fetch_row($count)){
+          $xizang = $tmp[0];
+     }
+      //寧夏
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='寧夏'");
+          while($tmp=mysql_fetch_row($count)){
+          $ningxia = $tmp[0];
+     }
+         //新疆
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='新疆'");
+          while($tmp=mysql_fetch_row($count)){
+          $xinjiang = $tmp[0];
+     }
+         //黑龍江
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='黑龍江'");
+          while($tmp=mysql_fetch_row($count)){
+          $heilongjiang = $tmp[0];
+     }
+         //重慶
+	$count=mysql_query("select count(*) from phome_ecms_shop where classid=44 and china='重慶'");
+          while($tmp=mysql_fetch_row($count)){
+          $chongqing = $tmp[0];
+     }
+?>
+
+	<script type="text/javascript">
+		$(function() {
+			// $.ajax({
+			//  url: projectName+'/idea123Action.do?method=getIdea123MapData&reportName='+reportName,
+			//  data: data,
+			//  dataType: 'json',
+			//  success: function(data){
+
+			var data = {
+				"jiangsu":{"value":"<?=$jiangsu?>家","index":"1","url":"/e/template/incfile/xiaoshou.php?china=江蘇","stateInitColor":"0"},
+				"henan":{"value":"<?=$henan?>家","index":"2","url":"/e/template/incfile/xiaoshou.php?china=河南","stateInitColor":"0"},
+				"anhui":{"value":"<?=$anhui?>家","index":"3","url":"/e/template/incfile/xiaoshou.php?china=安徽","stateInitColor":"0"},
+				"zhejiang":{"value":"<?=$zhejiang?>家","index":"4","url":"/e/template/incfile/xiaoshou.php?china=浙江","stateInitColor":"0"},
+				"liaoning":{"value":"<?=$liaoning?>家","index":"5","url":"/e/template/incfile/xiaoshou.php?china=遼寧","stateInitColor":"0"},
+				"beijing":{"value":"<?=$beijing?>家","index":"6","url":"/e/template/incfile/xiaoshou.php?china=北京","stateInitColor":"1"},
+				"hubei":{"value":"<?=$hubei?>家","index":"7","url":"/e/template/incfile/xiaoshou.php?china=湖北","stateInitColor":"1"},
+				"jilin":{"value":"<?=$jilin?>家","index":"8","url":"/e/template/incfile/xiaoshou.php?china=吉林","stateInitColor":"1"},
+				"shanghai":{"value":"<?=$shanghai?>家","index":"9","url":"/e/template/incfile/xiaoshou.php?china=上海","stateInitColor":"1"},
+				"guangxi":{"value":"<?=$guangxi?>家","index":"10","url":"/e/template/incfile/xiaoshou.php?china=廣西","stateInitColor":"1"},
+				"sichuan":{"value":"<?=$sichuan?>家","index":"11","url":"/e/template/incfile/xiaoshou.php?china=四川","stateInitColor":"2"},
+				"guizhou":{"value":"<?=$guizhou?>家","index":"12","url":"/e/template/incfile/xiaoshou.php?china=貴州","stateInitColor":"2"},
+				"hunan":{"value":"<?=$hunan?>家","index":"13","url":"/e/template/incfile/xiaoshou.php?china=湖南","stateInitColor":"2"},
+				"shandong":{"value":"<?=$shandong?>家","index":"14","url":"/e/template/incfile/xiaoshou.php?china=山東","stateInitColor":"2"},
+				"guangdong":{"value":"<?=$guangdong?>家","index":"15","url":"/e/template/incfile/xiaoshou.php?china=廣東","stateInitColor":"2"},
+				"jiangxi":{"value":"<?=$jiangxi?>家","index":"16","url":"/e/template/incfile/xiaoshou.php?china=江西","stateInitColor":"3"},
+				"fujian":{"value":"<?=$fujian?>家","index":"17","url":"/e/template/incfile/xiaoshou.php?china=福建","stateInitColor":"3"},
+				"yunnan":{"value":"<?=$yunnan?>家","index":"18","url":"/e/template/incfile/xiaoshou.php?china=雲南","stateInitColor":"3"},
+				"hainan":{"value":"<?=$hainan?>家","index":"19","url":"/e/template/incfile/xiaoshou.php?china=海南","stateInitColor":"3"},
+				"shanxi":{"value":"<?=$shanxi?>家","index":"20","url":"/e/template/incfile/xiaoshou.php?china=山西","stateInitColor":"3"},
+				"hebei":{"value":"<?=$hebei?>家","index":"21","url":"/e/template/incfile/xiaoshou.php?china=河北","stateInitColor":"4"},
+				"neimongol":{"value":"<?=$neimongol?>家","index":"22","url":"/e/template/incfile/xiaoshou.php?china=內蒙古","stateInitColor":"4"},
+				"tianjin":{"value":"<?=$tianjin?>家","index":"23","url":"/e/template/incfile/xiaoshou.php?china=天津","stateInitColor":"4"},
+				"gansu":{"value":"<?=$gansu?>家","index":"24","url":"/e/template/incfile/xiaoshou.php?china=甘肅","stateInitColor":"4"},
+				"shaanxi":{"value":"<?=$shaanxi?>家","index":"25","url":"/e/template/incfile/xiaoshou.php?china=陝西","stateInitColor":"4"},
+				"macau":{"value":"<?=$macau?>家","index":"26","url":"/e/template/incfile/xiaoshou.php?china=澳門","stateInitColor":"7"},
+				"hongkong":{"value":"<?=$hongkong?>家","index":"27","url":"/e/template/incfile/xiaoshou.php?china=香港","stateInitColor":"7"},
+				"taiwan":{"value":"<?=$taiwan?>家","index":"28","url":"/e/template/incfile/xiaoshou.php?china=臺灣","stateInitColor":"7"},
+				"qinghai":{"value":"<?=$qinghai?>家","index":"29","url":"/e/template/incfile/xiaoshou.php?china=青海","stateInitColor":"7"},
+				"xizang":{"value":"<?=$xizang?>家","index":"30","url":"/e/template/incfile/xiaoshou.php?china=西藏","stateInitColor":"7"},
+				"ningxia":{"value":"<?=$ningxia?>家","index":"31","url":"/e/template/incfile/xiaoshou.php?china=寧夏","stateInitColor":"7"},
+				"xinjiang":{"value":"<?=$xinjiang?>家","index":"32","url":"/e/template/incfile/xiaoshou.php?china=新疆","stateInitColor":"7"},
+				"heilongjiang":{"value":"<?=$heilongjiang?>家","index":"33","url":"/e/template/incfile/xiaoshou.php?china=黑龍江","stateInitColor":"7"},
+				"chongqing":{"value":"<?=$chongqing?>家","index":"34","url":"/e/template/incfile/xiaoshou.php?china=重慶","stateInitClor":"7"}
+			};
+			// 添加左側列表
+			var i = 1;
+			for(k in data){
+				if(i <= 18){
+					var _cls = i < 4 ? 'active' : '';
+					$('#MapControl .list1').append('<li name="'+k+'"><a href="'+data[k].url+'"><div class="mapInfo"><i class="'+_cls+'">'+(i++)+'</i><span>'+chinaMapConfig.names[k]+'</span><b>'+data[k].value+'</b></div></a></li>')
+				}else if(i <= 36){
+					$('#MapControl .list2').append('<li name="'+k+'"><a href="'+data[k].url+'"><div class="mapInfo"><i class="'+_cls+'">'+(i++)+'</i><span>'+chinaMapConfig.names[k]+'</span><b>'+data[k].value+'</b></div></a></li>')
+				}else{
+					$('#MapControl .list3').append('<li name="'+k+'"><div class="mapInfo"><i>'+(i++)+'</i><span>'+chinaMapConfig.names[k]+'</span><b>'+data[k].value+'</b></div></li>')
+				}
+			}
+
+			var mapObj_1 = {};
+			var stateColorList = ['003399', '0058B0', '0071E1', '1C8DFF', '51A8FF', '82C0FF', 'AAD5ee', 'AAD5FF'];
+			// 地圖初始化
+			$('#RegionMap').SVGMap({
+				external: mapObj_1,
+				mapName: 'china',
+				mapWidth: 880,
+				mapHeight: 880,
+				stateData: data,//自定義數據
+				// stateTipWidth: 118,
+				// stateTipHeight: 47,
+				// stateTipX: 2,
+				// stateTipY: 0,
+				stateTipHtml: function (mapData, obj) {
+					var _value = mapData[obj.id].value;
+					var _idx = mapData[obj.id].index;
+					var active = '';
+					_idx < 4 ? active = 'active' : active = '';
+					var tipStr = '<div class="mapInfo"><i class="' + active + '">' + _idx + '</i><span>' + obj.name + '</span><b>' + _value + '</b></div>';
+					return tipStr;
+				},
+				clickCallback: function(stateData, obj){//點擊回掉
+					// console.log(stateData);
+					// console.log(obj.id);
+					for(k in stateData){
+						if (k==obj.id) {//點擊地圖上的省份的時候，打開相應省份的列表
+							window.open(stateData[k].url);
+						}
+					}
+				}
+			});
+			$('#MapControl li').hover(function () {//鼠標hover事件
+				var thisName = $(this).attr('name');
+
+				var thisHtml = $(this).html();
+				$('#MapControl li').removeClass('select');
+				$(this).addClass('select');
+				$(document.body).append('<div id="StateTip"></div');
+				$('#StateTip').css({
+					left: $(mapObj_1[thisName].node).offset().left - 50,
+					top: $(mapObj_1[thisName].node).offset().top - 40
+				}).html(thisHtml).show();
+				mapObj_1[thisName].attr({
+					fill: '#E99A4D'
+				});
+			}, function () {
+				var thisName = $(this).attr('name');
+
+				$('#StateTip').remove();
+				$('#MapControl li').removeClass('select');
+				mapObj_1[$(this).attr('name')].attr({
+					fill: "#" + stateColorList[data[$(this).attr('name')].stateInitColor]
+				});
+			});
+
+			$('#MapColor').show();
+
+
+		});
+	</script>
+	<script type="text/javascript" src="/js/jquery.SuperSlide.2.1.1.js"></script>
+
+</head>
+<body>
+
+[!--temp.header--]
+<div id="body_container">
+	<div class="banner">
+		<div class="banner-content">
+			<script src="http://tw.franzsandner.com/d/js/acmsd/thea13.js"></script>
+		</div>
+	</div>
+	<div class="divsd clearfix">
+		<div class="list-menu clearfix">
+			<div class="list-new-logo f-l-l">
+				<h3>德国法兰山德</h3>
+			</div>
+			<div class="list-page-num f-l-l">
+				<h2 class="f-l-l">銷售網路&gt;</h2>
+				<h3 class="f-l-l">國內代理商</h3>
+			</div>
+		</div>
+		<div class="m_n">
+			<div class="main_new2">
+
+				<!-- 左側菜單開始···················································· -->
+				<div class="nn_left2">
+					<div class="leftcate">
+						<ul style="margin-top:10px;"><li class="hov"><a href="[!--news.url--]xiaoshou">全球代理商</a></li><li class="big"><a href="[!--news.url--]xiaoshou/guonei">中國代理商</a></li></ul>
+					</div>
+					<!-- 搜索框開始················································ -->
+					<div class="search-warp clearfix">
+						<form action="">
+
+							<div class="form-group f-l-l">
+								<label class="sr-only" for="search-con">輸入各地琴行</label>
+								<input class="form-control f-l-l" id="search-con " type="text" placeholder="輸入搜索內容">
+							</div>
+							<button class="btn  btn-warning f-l-l" type="submit ">搜索</button>
+						</form>
+					</div>
+
+					<!-- 搜索框結束················································ -->
+					<div class="clear" style="height:20px"></div>
+					<div class="clear" style="height:20px"></div>
+				</div>
+				<!-- 右側菜單開始················································ -->
+				<div class="nn_right">
+					<!--<h4 class="right05">&gt;&gt; <a href="">銷售網絡</a> &gt; 國內代理商</h4>-->
+					<div class="sale-net-map">
+						<div class="items" id="Item9">
+							<a href="javascript:;" class="fold"></a>
+							<div class="itemCon">
+
+								<div id="Region" style="position:relative; height:360px;">
+									<div class="regionList" id="MapControl">
+										<ul class="list1"></ul>
+										<ul class="list2"></ul>
+									</div>
+									<div class="regionMap" id="RegionMap"></div>
+									<div id="MapColor" style=" display:none; float:left; width:30px; height:180px; margin:80px 0 0 10px; display:inline; background:url(images/map_color.png) center 0;"></div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+[!--temp.footer--]
+</body>
+</html>

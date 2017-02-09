@@ -1,0 +1,147 @@
+/*
+ * By Freed 
+ * flyxz@126.com
+ * 2016-6-18
+*/
+body a{color: #E29564}
+body a:hover{color: #C56400}
+.main{
+	width: 1200px;
+	margin: 0 auto;
+	/*border: 1px solid #ccc;*/
+	/*background-color: #ddd;*/
+}
+.all-list{background-color: #fff;}
+.all-list-warp{
+	width: 1200px;
+	margin: 0 auto;
+}
+.list-head-img{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 15px 0;
+}
+.list-head-img>img{
+	width: 1200px;
+}
+.all-list-left{
+	width: 260px;
+	/*border: 1px solid #ccc;*/
+	background-color: #E29564;
+}
+.all-list-left-head{
+	border-bottom: 2px solid #DABB90;
+	padding-left: 20px;
+	font:20px/40px 微软雅黑;
+	color: #fff;
+	padding-top: 20px;
+	margin-top: 0;
+	background-color: #E29564;
+}
+.all-list-left-type{
+	padding-top: 20px;
+	margin-left: 20px;
+	width: 218px;
+}
+.all-list-left-type .list-group-item{
+	background-color: #FFEED4;
+}
+.all-list-left .list-group-item{
+	border: 1px solid #DABB90;
+}
+dt.list-group-item a{
+	color: #333;
+}
+.all-list-left-title,
+.all-list-left-con{
+	border:none;
+}
+.all-list-left-title a{
+	font:16px/32px 微软雅黑;
+	color: #C66500
+}
+.all-list-left-title{
+	border-top: 1px solid #DABB90;
+}
+
+/*左侧完成·······················································*/
+
+/*右侧开始·······················································*/
+.all-list-right{
+	width: 920px;
+	margin-left: 20px;
+	background-color: #fff;
+}
+.all-list-right-head{
+	border-bottom: 1px solid #E29564;
+}
+.list-right-current{
+	background-color: #fff;
+	min-height: 985px;
+}
+.list-right-head-title{
+    font-family: "Microsoft YaHei", SimSun, SimHei;
+    color: #E29564;
+}
+.search .btn-primary{
+	width: 100px;
+    background-color: #E29564;
+    border:solid 1px #E29564;
+}
+.search .btn-primary:hover{
+	width: 100px;
+    background-color: #E29564;
+    border:solid 1px #E29564;
+}
+.search{
+	margin-right: 20px;
+	margin-top: 10px;
+	display: none;
+}
+.list-product{
+	width: 220px;
+	border: 1px solid #ccc;
+	margin-right: 13px;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	border-radius: 3px;
+	height: 317px;
+	background-color: #fff;
+}
+.list-product:hover{border: 1px solid #E29564;}
+.list-product-img img{
+	width: 100%;
+	min-height: 218px;
+	max-height: 218px;
+}
+.load-all-product{
+	width: 940px;
+	padding:  20px 0;
+}
+.load-all-product p{max-width: 920px;}
+.load-all-product p img{max-width: 900px;}
+.list-product-title,
+.list-product-intro,
+.list-product-price{
+	padding-left: 20px;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	text-decoration: none;
+}
+.list-product-img{
+	width: 218px;
+	height: 218px;
+}
+
+.all-list-left-type>dd,
+.all-list-left-type>dt{
+	cursor: pointer;
+	transition: all 1s ease 0s;
+}
+.all-list-left-type>dd:hover,
+.all-list-left-type>dt:hover{
+	background-color: #fff;
+}
