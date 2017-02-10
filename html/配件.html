@@ -19,10 +19,10 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 	<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script src="/js/xin-list.js"></script>
 	<script>
-		$(function () {
-			//	0.页面加载首先获取热门钢琴
-			chaxunremen('46,63,68,72');
-		})
+			$(function () {
+				//	0.页面加载首先获取热门钢琴
+				chaxunremen('85,86,87,88,89,82,81,83');
+			})
 	</script>
 </head>
 <body>
@@ -71,58 +71,30 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 			<!-- 列表左侧分类········································ -->
 			<div class="all-list-left f-l-l">
 				<div class="list-group-warp">
-					<div class="list-group-item all-list-left-title"><a onclick="chaxunremen('46,63,68,72')">Popular Products</a></div>
+					<div class="list-group-item all-list-left-title"><a onclick="chaxunremen('85,86,87,88,89,82,81,83')">Popular Products</a></div>
 				</div>
 				<div class="list-group-warp">
 					<div class="list-group-item all-list-left-title">
-						<a >Bow</a>
+						<a >String Accessory</a>
 						<span class="sanjiao"></span>
 					</div>
 					<dl class="all-list-left-type type1 list-group" style="display: none">
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(60,$(this))">Violin Bow</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(61,$(this))">Viola Bow</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(62,$(this))">Cello Bow</a></dt>
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(85,$(this))">Bow</a></dt>
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(86,$(this))">Case</a></dt>
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(87,$(this))">String</a></dt>
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(88,$(this))">Shoulder Rest</a></dt>
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(89,$(this))">Rosin</a></dt>
 					</dl>
 				</div>
 				<div class="list-group-warp">
-					<div class="list-group-item all-list-left-title">
-						<a >Case</a>
-						<span class="sanjiao"></span>
-					</div>
-					<dl class="all-list-left-type type1 list-group" style="display: none">
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(64,$(this))">Violin Case</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(65,$(this))">Viola Case</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(66,$(this))">Cello Case</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(67,$(this))">Double Bass Bag</a></dt>
-					</dl>
+					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(82,$(this))">Guitar Accessory</a></div>
 				</div>
 				<div class="list-group-warp">
-					<div class="list-group-item all-list-left-title">
-						<a >String</a>
-						<span class="sanjiao"></span>
-					</div>
-					<dl class="all-list-left-type type1 list-group" style="display: none">
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(69,$(this))">Violin String</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(70,$(this))">Viola String</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(71,$(this))">Cello String</a></dt>
-					</dl>
+					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(81,$(this))">Piano Accessory</a></div>
 				</div>
 				<div class="list-group-warp">
-					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(72,$(this))">Shoulder Rest</a></div>
+					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(83,$(this))">Other Accessory</a></div>
 				</div>
-				<div class="list-group-warp">
-					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(73,$(this))">Rosin</a></div>
-				</div>
-
-				<!-- <dl class="all-list-left-type type2 list-group">
-					<dd class="list-group-item all-list-left-title"><a href="javascript:void(0)" onclick="chaxuntwo(35,$(this).html())">fason吉他</a></dd>
-				</dl> -->
-				<!-- <dl class="all-list-left-type type6 list-group">
-					<dd class="list-group-item all-list-left-title"><a href="">提琴专业技术</a></dd>
-					<dt class="list-group-item all-list-left-con"><a href="">提琴历史</a></dt>
-					<dt class="list-group-item all-list-left-con"><a href="">保养</a></dt>
-					<dt class="list-group-item all-list-left-con"><a href="">常见问题与维修</a></dt>
-				</dl> -->
 			</div>
 			<!-- 左侧种类列表结束··············································· -->
 			<!-- 右侧详细列表··················································· -->

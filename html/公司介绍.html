@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-	<meta charset="UTF-8"/>
+	<meta charset="UTF-8">
 	<?php
 $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 ?>
@@ -10,331 +10,189 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 	<meta name="keywords" content="<?=$bqr[classpagekey]?>" />
 	<meta name="description" content="<?=$bqr[intro]?>" />
 	[/e:loop]
-	<link rel="stylesheet" type="text/css" href="/css/base.css">
-	<link href="/css/xin-sale-net.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/css/contact-us.css">
 	<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
-
-	<script type="text/javascript" src="/js/jquery.SuperSlide.2.1.1.js"></script>
 	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
-	<script type="text/javascript">
-		$(function() {
-			// 右侧点击菜单，切换左侧内容
-			var ComIntrL = $('.company-introduce'),//左侧菜单
-			    ComIntrLi,
-			    noname,
-			    ComIntrR =$('.neirong');//右侧内容
-			ComIntrL.on('click', function(event) {
-				$(this).addClass('current').siblings('.company-introduce').removeClass('current');//左侧菜单class更改
-				ComIntrLi = $(this).index();
-//				console.log(ComIntrLi);
-				ComIntrR.eq(ComIntrLi).addClass('current').siblings().removeClass('current');
-				noname = $(this).children('a').html();
-				$('.list-page-num h3').html(noname);
-			});
-
-		});
-	</script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=iC7vd85WjGWnSgBFRBMOuZ7atogsTAKY"></script>
 </head>
 <body>
 [!--temp.header--]
-<div id="body_container">
-	<div class="banner">
-		<div class="banner-content">
-			<script src="http://en.franzsandner.com/d/js/acmsd/thea13.js"></script>
-		</div>
-	</div>
-	<div class="divsd clearfix">
-		<div class="list-menu clearfix">
-			<div class="list-new-logo f-l-l">
-				<h3>Franz Sandner</h3>
-			</div>
-			<div class="list-page-num f-l-l">
-				<h2 class="f-l-l">Introduction&gt;</h2>
-				<h3 class="f-l-l">Franz Sandner</h3>
-			</div>
-		</div>
-		<div class="m_n">
-			<div class="main_new2">
-				<!-- <div class="h203">销售网络</div> -->
-				<!-- 左侧菜单开始···················································· -->
-				<div class="nn_left2">
-					<div class="leftcate">
-						<!--<h2 class="h201">Introduction</h2>-->
-						<ul style="margin-top:10px;">
-							<li class=" company-introduce current"><a >Franz Sandner</a></li>
-							<!-- <li class=" company-introduce"><a></a></li> -->
-							<!-- <li class=" company-introduce"><a></a></li> -->
-							<li class=" company-introduce"><a>Members</a></li>
-							<!-- <li class=" company-introduce"><a>Technical Team</a></li> -->
-						</ul>
-					</div>
-					<!-- 搜索框开始················································ -->
-					<!-- <div class="search-warp clearfix">
-					  <form action="">
+<section class="contact-us-warp">
+	<h1>Contact Us</h1>
+	<div class="contact-us-address de">
+		<h2>German Company</h2>
+		<div class="address-de">
+			<div id="allmap1">
+				<img src="/images/de.jpg" alt="">
+				<div class="de-factory clearfix">
+					<h2 class="f-l-l">Franz Sandner in Germany</h2>
+					<img class="f-l-l" src="/images/gongchangde.jpg" alt="">
+					<p>In 1924, Mr. Franz Sandner established his own company in Germany, After the Second World War, most musical instrument factories moved to Nauheim, which near the Frankfurt suburb due to the border redrawn between Germany and Czech Republic. Since then, the company continue improving their excelsior manufacturing technique and provide the fine instrument to the world.
+					</p>
 
-						<div class="form-group f-l-l">
-						   <label class="sr-only" for="search-con">输入各地琴行</label>
-						  <input class="form-control f-l-l" id="search-con " type="text" placeholder="输入搜索内容">
-						</div>
-						<button class="btn  btn-warning f-l-l" type="submit ">搜索</button>
-					  </form>
-					</div> -->
-					<!-- 搜索框结束················································ -->
-				</div>
-				<!-- 右侧菜单开始················································ -->
-				<div class="nn_right">
-					<!--<h4 class="right05">&gt;&gt; <a href="">Introduction</a> &gt;<span class="noname">Franz Sandner</span> </h4>-->
-					<!-- 省代理商列表 -->
-					<div class="province-sale-list">
-						<!-- 文章内容1 Franz Sandenr·········································· -->
-						<div class="neirong current flsd">
-							<img src="/images/falan01.jpg" alt="" />
-							<!-- 段落1···················································· -->
-							<div class="neirong-duan">
-								<div class="duan-head clearfix">
-									<h3 class="f-l-l">Brand Foundation</h3>
-									<span class="f-l-l">Franz Sandner</span>
-								</div>
-								<p>In 1924, Mr. Franz Sandner established his own company in Germany, and with a warm and gentle tone and harmonizing-precision design, Franz Sandner became well-known worldwide for its excelsior manufacturing technique.
-									After the Second World War, most musical instrument factories moved to Nauheim, which near the Frankfurt suburb due to the border redrawn between Germany and Czech Republic. The company started again like many other musical instrument factories and continued improving its excelsior workmanship.</p>
-							</div>
-							<!-- 段落1结束················································ -->
-							<!-- 段落2···················································· -->
-							<div class="neirong-duan">
-								<div class="duan-head clearfix">
-									<h3 class="f-l-l">Germany Boutique</h3>
-									<span class="f-l-l">Richard Schuh</span>
-								</div>
-								<p>In 1950s, Mr. Franz Sandner's daughter, Sonja, and her husband, Richard Schuh, took over the family business. In the 1980s, they began manufacturing violins and guitars, and expanded their musical enterprise to include pianos and wind instruments as well.</p>
-							</div>
-							<!-- 段落2结束················································ -->
-							<!-- 段落3···················································· -->
-							<div class="neirong-duan">
-								<div class="duan-head clearfix">
-									<h3 class="f-l-l">Global Brand</h3>
-									<span class="f-l-l">Dietmar Schuh</span>
-								</div>
-								<p>The third generation Dietmar Schuh led the company in 1980s. And in 90's the company decided to establish their own product line in China. In 2004, Chinese factory was set up in Shanghai, China.</p>
-							</div>
-							<!-- 段落3结束················································ -->
-							<h1>
-								<img src="/images/falan02.jpg" alt="" />
-							</h1>
-						</div>
-						<!-- 文章内容1结束··············································· -->
-
-						<!-- 文章内容2 福斯特·········································· -->
-						<!-- <div class="neirong fst">
-						  <img src="/images/falan03.jpg" alt="" />
-
-						  <div class="neirong-duan">
-						  </div>
-
-						  <h1>
-							<img src="/images/falan04.jpg" alt="" />
-						  </h1>
-						</div> -->
-						<!-- 文章内容2结束··············································· -->
-
-						<!-- 文章内容3 经营理念·········································· -->
-						<!-- <div class="neirong jyln">
-
-
-						  <div class="neirong-duan">
-							<div class="duan-head clearfix">
-							  <h3 class="f-l-l"></h3>
-							  <span class="f-l-l"></span>
-							</div>
-							<img src="/images/falan05.jpg" alt="" />
-							<p></p>
-						  </div>
-
-						</div> -->
-						<!-- 文章内容3结束··············································· -->
-
-						<!-- 文章内容4 重要成员·········································· -->
-						<div class="neirong zycy">
-							<!-- 段落1···················································· -->
-							<div class="neirong-duan">
-								<div class="duan-head important-head clearfix">
-									<h3 class="f-l-l">Members</h3>
-								</div>
-								<!-- 分公司1······························ -->
-								<div class="important de">
-									<h2></h2>
-									<!-- 成员1······························ -->
-									<!-- <div class="important-members clearfix">
-									  <div class="members-head-img f-l-l">
-										<img src="/images/member1.jpg" alt="">
-									  </div>
-									  <div class="members-info f-l-r">
-										<h3 class="members-name">
-
-										</h3>
-										<p class="members-intro">                  </p>
-									  </div>
-									</div> -->
-									<!-- 成员1结束·························· -->
-									<!-- 成员2······························ -->
-									<!-- <div class="important-members clearfix">
-									  <div class="members-head-img f-l-l">
-										<img src="/images/member2.jpg" alt="">
-									  </div>
-									  <div class="members-info f-l-r">
-										<h3 class="members-name">
-
-										</h3>
-										<p class="members-intro">
-
-										</p>
-									  </div>
-									</div> -->
-									<!-- 成员2结束·························· -->
-								</div>
-								<!-- 分公司1结束·························· -->
-								<!-- 分公司2······························ -->
-								<div class="important flsd">
-									<h2>Franz Sandner</h2>
-									<!-- 成员1······························ -->
-									<div class="important-members clearfix">
-										<div class="members-head-img f-l-l">
-											<img src="/images/member3.jpg" alt="">
-										</div>
-										<div class="members-info f-l-r">
-											<h3 class="members-name">CEO--Dietmar Schuh
-											</h3>
-											<p class="members-intro">The 3rd generation of Franz Sandner. Enter the company since 1980s, following his father Richard Schuh, and took over the company in 1988, led Franz Sandner to be a global brand. Franz Sandner become a popular brand in America, German, UK, Japan, South Korea...Now Mr. Franz Sandner is responsible for global marketing.
-											</p>
-										</div>
-									</div>
-									<!-- 成员1结束·························· -->
-									<!-- 成员2······························ -->
-									<div class="important-members clearfix">
-										<div class="members-head-img f-l-l">
-											<img src="/images/member4.jpg" alt="">
-										</div>
-										<div class="members-info f-l-r">
-											<h3 class="members-name">
-												Sales Director--Soraya Schuh
-											</h3>
-											<p class="members-intro">Enter the company since 1991. Responsibel for Euro and America sales promotion.
-											</p>
-										</div>
-									</div>
-									<!-- 成员2结束·························· -->
-									<!-- 成员3······························ -->
-									<div class="important-members clearfix">
-										<div class="members-head-img f-l-l">
-											<img src="/images/member5.jpg" alt="">
-										</div>
-										<div class="members-info f-l-r">
-											<h3 class="members-name">Technician--Frank
-											</h3>
-											<p class="members-intro">Frank is professional in violin product and design with many year of experience. He's now working in Franz Sandner and in charge of violin production and quality.
-											</p>
-										</div>
-									</div>
-									<!-- 成员3结束·························· -->
-								</div>
-								<!-- 分公司2结束·························· -->
-
-								<!-- 分公司3······························ -->
-								<div class="important sh">
-									<h2>Sandner Dynasty</h2>
-									<!-- 成员1······························ -->
-									<div class="important-members clearfix">
-										<div class="members-head-img f-l-l">
-											<img src="/images/member6.jpg" alt="">
-										</div>
-										<div class="members-info f-l-r">
-											<h3 class="members-name">General Manager--Teddy CHEN
-											</h3>
-											<p class="members-intro">Teddy was born in a piano family in Taiwan, and had knowledge of piano industry from childhood. When got 23 years old, Teddy started working on the import and export of musical instruments, which gave him an in-depth understanding of the music global market. He entered Sandner Dynasty sicne 2002, and takes charge of Chinese factory and market promotion.
-											</p>
-										</div>
-									</div>
-									<!-- 成员1结束·························· -->
-									<!-- 成员2······························ -->
-									<div class="important-members clearfix">
-										<div class="members-head-img f-l-l">
-											<img src="/images/member9.png" alt="">
-										</div>
-										<div class="members-info f-l-r">
-											<h3 class="members-name">Technical Director--Ta-Chia Lin
-											</h3>
-											<p class="members-intro">Mr. Lin steps into the field of piano manufacturing since 1979. He’s a lecturer of IAPBT (International Association of Piano Builders and Technicians), and has been invited to give speech about piano technical in many countries. Mr. Lin also served as secretary general of IAPBT, and won the innovation award of IAPBT, as he published piano manufacturing and innovation technic and tools for many times in Japan. Now, he is the technical adviser for FRANZ SANDNER piano and responsible for the piano design, production process, and personal training.
-											</p>
-										</div>
-									</div>
-									<!-- 成员2结束·························· -->
-									<!-- 成员3······························ -->
-									<div class="important-members clearfix">
-										<div class="members-head-img f-l-l">
-											<img src="/images/member7.jpg" alt="">
-										</div>
-										<div class="members-info f-l-r">
-											<h3 class="members-name">Vice President--Diana Zhang
-											</h3>
-											<p class="members-intro">Diana is professional on the field of financial management, financial audit, and cooperate management for about 15 years. She is now responsibel for financial management and administration of Shanghai company.
-											</p>
-										</div>
-									</div>
-									<!-- 成员3结束·························· -->
-								</div>
-								<!-- 分公司3结束·························· -->
-
-								<!-- 分公司4······························ -->
-								<div class="important sh">
-									<h2>Taiwan Branch</h2>
-									<!-- 成员1······························ -->
-									<div class="important-members clearfix">
-										<div class="members-head-img f-l-l">
-											<img src="/images/member8.jpg" alt="">
-										</div>
-										<div class="members-info f-l-r">
-											<h3 class="members-name">Manager--Meilan Lin
-											</h3>
-											<p class="members-intro">Mrs. Lin used to work on JS Bach and other musical instrument company. Now she is in charge of Sandner in Taiwan. She's very fond of music and dedicates to provide professional and price-reasonable musical instrument to customer.
-											</p>
-										</div>
-									</div>
-									<!-- 成员1结束·························· -->
-									<!-- 成员2······························ -->
-
-									<!-- 成员2结束·························· -->
-
-								</div>
-								<!-- 分公司4结束·························· -->
-							</div>
-							<!-- 段落1结束················································ -->
-						</div>
-						<!-- 文章内容4结束··············································· -->
-
-						<!-- 文章内容5 经营理念·········································· -->
-						<!-- <div class="neirong jyln">
-
-
-						  <div class="neirong-duan">
-							<div class="duan-head important-head clearfix">
-							  <h3 class="f-l-l">Technical Team</h3>
-							  <span class="f-l-l"></span>
-							</div>
-							<img src="/images/falan06.jpg" alt="" />
-							<p></p>
-							<img src="/images/falan07.jpg" alt="" />
-						  </div>
-
-						</div> -->
-						<!-- 文章内容5结束··············································· -->
-
-
-					</div>
+					<!-- <div class="sanjiao"></div> -->
 				</div>
 			</div>
 		</div>
+		<ul class="list-group">
+			<li class="list-group-item">Add: Rheinstrasse 4D-64569 Nauheim Germany</li>
+			<li class="list-group-item">Tel: 49-6152-6750</li>
+			<li class="list-group-item">Fax: 49-6152-61394</li>
+			<li class="list-group-item">E-mail: Franz-Sandner@t-online.de</li>
+		</ul>
 	</div>
-</div>
+	<div class="contact-us-address cn">
+		<h2>Shanghai Company</h2>
+		<div class="address-de">
+			<!-- <div id="allmap2"></div> -->
+			<div id="allmap1">
+				<img src="/images/falansh.jpg" alt="">
+				<div class="de-factory clearfix">
+					<h2 class="f-l-l">Factory in Shanghai, China</h2>
+					<img class="f-l-l" src="/images/falan.jpg" alt="">
+					<p>The third generation Dietmar Schuh led the company in 1980s. And in 90's the company decided to establish their own product line in China. In 2004, Chinese factory was set up in Shanghai, China.</p>
+
+					<!-- <div class="sanjiao"></div> -->
+				</div>
+			</div>
+		</div>
+		<ul class="list-group">
+			<li class="list-group-item">Add: No. 35, Lane 1388, East Qianming Road, Jinshan District, Shanghai, China</li>
+			<li class="list-group-item">Tel: 400-6962-818</li>
+			<li class="list-group-item">Fax: 86-21-54170590</li>
+			<li class="list-group-item">E-mail: (Chinese domstic market) sqq@franzsandner.com</li>
+			<li class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     (International Market) export@franzsandner.com</li>
+			<li class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     (Sales Service) service-china@franzsandner.com</li>
+
+		</ul>
+	</div>
+	<div class="contact-us-address tw">
+		<h2>Taiwan Company</h2>
+		<div class="address-de">
+			<div id="allmap3"></div>
+		</div>
+		<ul class="list-group">
+			<li class="list-group-item">Add: No. 80, Siwei Road, Hsinchu City, Taiwan</li>
+			<li class="list-group-item">Tel: 886-3-524-8080</li>
+			<li class="list-group-item">Fax: 886-3-526-0225</li>
+			<li class="list-group-item">E-mail: (Sales Service) service@franzsandner.com</li>
+			<li class="list-group-item">(Wholesales) tomy@franzsandner.com</li>
+		</ul>
+	</div>
+</section>
 [!--temp.footer--]
 </body>
 </html>
+<script type="text/javascript">
+	// // 百度地图API功能
+	// var sContent1 =
+	// "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>天安门</h4>" +
+	// "<img style='float:right;margin:4px' id='imgDemo1' src='/images/falan.jpg' width='139' height='104' title='天安门'/>" +
+	// "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>天安门坐落在中国北京市中心,故宫的南侧,与天安门广场隔长安街相望,是清朝皇城的大门...</p>" +
+	// "</div>";
+	// var map1 = new BMap.Map("allmap1");
+	// var point1 = new BMap.Point(49.9413361, 8.4467076);
+	// var marker1 = new BMap.Marker(point1);
+	// var infoWindow1 = new BMap.InfoWindow(sContent1);  // 创建信息窗口对象
+	// map1.centerAndZoom(point1, 15);
+	// map1.addOverlay(marker1);
+	// map1.enableScrollWheelZoom();
+	// marker1.addEventListener("click", function(){
+	//    this.openInfoWindow(infoWindow1);
+	//    //图片加载完毕重绘infowindow
+	//    document.getElementById('imgDemo1').onload = function (){
+	//     infoWindow1.redraw();   //防止在网速较慢，图片未加载时，生成的信息框高度比图片的总高度小，导致图片部分被隐藏
+	//    }
+	// });
+
+	// 百度地图API2功能
+	var sContent2 =
+		    "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>法兰山德上海总部</h4>" +
+		    "<img style='float:right;margin:4px' id='imgDemo2' src='/images/falan.jpg' width='139' height='104' title='法兰山德'/>" +
+		    "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>1980年代年轻的第三代Dietmar Schuh进入公司,成功的将产品推向全世界60多个国家,大幅提升了法兰山德的世界知名度,2002年成功在中国设立自己的生产线,引引领德国精致的工 艺进入中国市场,並得到广大音乐群众的喜爱,欢迎您来体验这来自于德国的完美音色。</p>" +
+		    "</div>";
+	var map2 = new BMap.Map("allmap2");
+	var point2 = new BMap.Point(121.054,30.890);
+	var marker2 = new BMap.Marker(point2);
+	var infoWindow2= new BMap.InfoWindow(sContent2);  // 创建信息窗口对象
+	map2.centerAndZoom(point2, 15);
+	map2.addOverlay(marker2);
+	map2.enableScrollWheelZoom();
+	marker2.addEventListener("click", function(){
+		this.openInfoWindow(infoWindow2);
+		//图片加载完毕重绘infowindow
+		document.getElementById('imgDemo2').onload = function (){
+			infoWindow2.redraw();   //防止在网速较慢，图片未加载时，生成的信息框高度比图片的总高度小，导致图片部分被隐藏
+		}
+	});
+	// 百度地图API3功能
+	var sContent3 =
+		    "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>法兰山德台湾公司</h4>" +
+		    "<img style='float:right;margin:4px' id='imgDemo3' src='/images/falan.jpg' width='139' height='104' title='法兰山德'/>" +
+		    "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>1980年代年轻的第三代Dietmar Schuh进入公司,成功的将产品推向全世界60多个国家,大幅提升了法兰山德的世界知名度,2002年成功在中国设立自己的生产线,引引领德国精致的工 艺进入中国市场,並得到广大音乐群众的喜爱,欢迎您来体验这来自于德国的完美音色。</p>" +
+		    "</div>";
+	var map3 = new BMap.Map("allmap3");
+	var point3 = new BMap.Point(121.518,25.044);
+	var marker3 = new BMap.Marker(point3);
+	var infoWindow3= new BMap.InfoWindow(sContent3);  // 创建信息窗口对象
+	map3.centerAndZoom(point3, 15);
+	map3.addOverlay(marker3);
+	map3.enableScrollWheelZoom();
+	marker3.addEventListener("click", function(){
+		this.openInfoWindow(infoWindow3);
+		//图片加载完毕重绘infowindow
+		document.getElementById('imgDemo2').onload = function (){
+			infoWindow3.redraw();   //防止在网速较慢，图片未加载时，生成的信息框高度比图片的总高度小，导致图片部分被隐藏
+		}
+	});
+</script>
+<!--<script>
+
+// This example displays a marker at the center of Australia.
+// When the user clicks the marker, an info window opens.
+//谷歌地图api
+function initMap() {
+  var uluru = {lat: 49.945,lng: 8.417};
+  var map = new google.maps.Map(document.getElementById('allmap1'), {
+    zoom: 4,
+    center: uluru
+  });
+
+  var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">德国法兰山德工厂</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>Mr. Franz Sandner</b>,  一个来自德国 <b>Schnbach （森巴赫）</b>' +
+      '的乐器生产家族,著名的品牌有 : '+
+      'Franz Sandner全系列乐器产品;SCHREIBER、KEILWERTH管乐； '+
+      'August Forster福斯特钢琴；WINTER、PUCHNER、 LAUSMANN、KLIER乐器配件。  '+
+      '二战之后因为德国与捷克的边境重划，大部分的成员将工厂搬迁至法兰克福近郊 '+
+      '的Nauheim（瑙海姆)镇继续着他们优良的乐器制作工艺。 '+
+      '</p>'+
+      '<p>德国官网, <a href="http://franz-sandner.de/">'+
+      'http://franz-sandner.de/</a> '+
+      '</p>'+
+      '</div>'+
+      '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+    title: 'Uluru (Ayers Rock)'
+  });
+  marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+}
+
+</script>
+<script async defer
+        src="https://ditu.google.cn/maps/api/js?key=AIzaSyDAG49bHoESJl6vzTuk3tWZLhr5Pb4SmqA&signed_in=true&callback=initMap"></script>-->

@@ -19,10 +19,10 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 	<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script src="/js/xin-list.js"></script>
 	<script>
-		$(function () {
-			//	0.页面加载首先获取热门钢琴
-			chaxunremen('37,38,35');
-		})
+			$(function () {
+				//	0.页面加载首先获取热门钢琴
+				chaxunremen('37,38,35,78');
+			})
 	</script>
 </head>
 <body>
@@ -71,7 +71,7 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 			<!-- 列表左侧分类········································ -->
 			<div class="all-list-left f-l-l">
 				<div class="list-group-warp">
-					<div class="list-group-item all-list-left-title"><a onclick="chaxunremen('37,38,35')">Popular Products</a></div>
+					<div class="list-group-item all-list-left-title"><a onclick="chaxunremen('37,38,35,78')">Popular Products</a></div>
 				</div>
 				<div class="list-group-warp">
 					<div class="list-group-item all-list-left-title">
@@ -82,6 +82,9 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(37,$(this))">Classic Guitar</a></dt>
 						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(38,$(this))">Acoustic Guitar</a></dt>
 					</dl>
+				</div>
+				<div class="list-group-warp">
+					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(78,$(this))">Sandner Ukulele</a></div>
 				</div>
 				<div class="list-group-warp">
 					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(35,$(this))">FASAN</a></div>

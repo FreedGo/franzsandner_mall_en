@@ -19,10 +19,10 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 	<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/js/xin-list.js"></script>
 	<script>
-		$(function () {
-			//	0.页面加载首先获取热门钢琴
-			chaxunremen('26,27,28,29,30');
-		})
+			$(function () {
+				//	0.页面加载首先获取热门钢琴
+				chaxunremen('26,27,28,29,30');
+			})
 	</script>
 </head>
 <body>
@@ -74,17 +74,19 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 					<div class="list-group-item all-list-left-title"><a onclick="chaxunremen('26,27,28,29,30')">Popular Products</a></div>
 				</div>
 				<div class="list-group-warp">
-					<div class="list-group-item all-list-left-title">
-						<a >String</a>
-						<span class="sanjiao"></span>
-					</div>
-					<dl class="all-list-left-type type1 list-group" style="display: none">
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(26,$(this))">Made in Germany</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(27,$(this))">Violin</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(28,$(this))">Viola</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(29,$(this))">Cello</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(30,$(this))">Double bass</a></dt>
-					</dl>
+					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(26,$(this))">Made in Germany</a></div>
+				</div>
+				<div class="list-group-warp">
+					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(27,$(this))">Violin</a></div>
+				</div>
+				<div class="list-group-warp">
+					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(28,$(this))">Viola</a></div>
+				</div>
+				<div class="list-group-warp">
+					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(29,$(this))">Cello</a></div>
+				</div>
+				<div class="list-group-warp">
+					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(30,$(this))">Double bass</a></div>
 				</div>
 			</div>
 			<!-- 左侧种类列表结束··············································· -->
