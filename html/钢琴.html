@@ -12,10 +12,10 @@
 	<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/js/xin-list.js"></script>
 	<script>
-		$(function () {
-			//	0.页面加载首先获取热门钢琴
-			chaxunremen('11,16,17,18,21,22,23,24,25,59');
-		})
+			$(function () {
+				//	0.页面加载首先获取热门钢琴
+				chaxunremen('11,16,17,18,21,22,23,24,25,59');
+			})
 	</script>
 </head>
 <body>
@@ -41,6 +41,24 @@
 <!-- 商品列表页······················································ -->
 <section class="main">
 	<div class="all-list-warp">
+		<!--列表标题-->
+		<div class="list-title">
+			<h2>Piano</h2>
+		</div>
+		<div class="list-menu clearfix">
+			<div class="list-new-logo f-l-l">
+				<h3>德国法兰山德</h3>
+			</div>
+			<div class="list-page-num f-l-l">
+				<ul class="pagination clearfix">
+					<li class="active page-list-item f-l-l" data-page="1"><a>1</a></li>
+				</ul>
+			</div>
+			<div class="list-title-subtitle" data-click="0">
+				<h3>Popular Products</h3>
+				<span class="sanjiao"></span>
+			</div>
+		</div>
 		<!-- 列表内容················································ -->
 		<div class="all-list clearfix">
 			<!-- 列表左侧分类········································ -->
@@ -56,7 +74,7 @@
 					<dl class="all-list-left-type type1 list-group" style="display: none">
 						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(21,$(this))">SP Serial</a></dt>
 						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(22,$(this))">FS Serial</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(59,$(this))">Other Serial</a></dt>
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(59,$(this))">UP Serial</a></dt>
 					</dl>
 				</div>
 				<div class="list-group-warp">
